@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" data-title-en="Asteroid — Erwan Mercier" data-title-fr="Asteroid — Erwan Mercier">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asteroid — Erwan Mercier</title>
+<meta name="description" content="Asteroid: an arcade game clone in Python and PyGame with a neural network written from scratch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script>try{if(localStorage.lang==='fr')document.documentElement.lang='fr'}catch{}</script>
+<script src="../main.js" defer></script>
+</head>
+<body>
+<div class="wrap page">
+  <header class="top">
+    <a class="name" href="../index.html">Erwan Mercier</a>
+    <nav aria-label="Main">
+      <a href="../index.html#projects"><span class="en">Projects</span><span class="fr">Projets</span></a>
+      <a href="../index.html#skills"><span class="en">Skills</span><span class="fr">Compétences</span></a>
+      <a href="../index.html#ethics"><span class="en">AI and ethics</span><span class="fr">IA et éthique</span></a>
+      <a href="../index.html#background"><span class="en">Background</span><span class="fr">Parcours</span></a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language / Langue">
+      <button data-l="en" aria-pressed="true" lang="en">EN</button>
+      <button data-l="fr" aria-pressed="false" lang="fr">FR</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <a class="back" href="../index.html#projects"><span class="en">Back to projects</span><span class="fr">Retour aux projets</span></a>
+      <h1>Asteroid</h1>
+      <p class="lead en">My first coding project: a copy of the Asteroids arcade game, and a neural network written from scratch that is meant to learn to play it.</p>
+      <p class="lead fr">Mon premier projet de code : une copie du jeu d’arcade Asteroids, et un réseau de neurones écrit de zéro censé apprendre à y jouer.</p>
+      <dl class="dl facts">
+        <div><dt><span class="en">Context</span><span class="fr">Contexte</span></dt><dd><span class="en">Personal project</span><span class="fr">Projet personnel</span></dd></div>
+        <div><dt><span class="en">Period</span><span class="fr">Période</span></dt><dd><span class="en">June to August 2024</span><span class="fr">Juin à août 2024</span></dd></div>
+        <div><dt><span class="en">Team</span><span class="fr">Équipe</span></dt><dd>Solo</dd></div>
+        <div><dt>Stack</dt><dd>Python, PyGame</dd></div>
+        <div><dt><span class="en">Result</span><span class="fr">Résultat</span></dt><dd><span class="en">The game is complete. The AI doesn’t converge yet; its best score is about 300.</span><span class="fr">Le jeu est complet. L’IA ne converge pas encore ; son meilleur score est d’environ 300.</span></dd></div>
+        <div><dt><span class="en">Code</span><span class="fr">Code</span></dt><dd><a href="https://github.com/Materwan/asteroid.git">github.com/Materwan/asteroid</a></dd></div>
+      </dl>
+    </div>
+
+    <section>
+      <div class="gallery two">
+        <figure><img class="shot" src="../assets/asteroid/game.png" width="1841" height="1074" alt="The game played by hand: a white ship among asteroids" data-alt-fr="Le jeu joué à la main : un vaisseau blanc au milieu d’astéroïdes"><figcaption><span class="en">The game played by hand.</span><span class="fr">Le jeu joué à la main.</span></figcaption></figure>
+        <figure><video class="shot" src="../assets/asteroid/training.mp4" width="800" height="800" autoplay muted loop playsinline aria-label="The AI playing during training" data-alt-fr="L’IA en train de jouer pendant l’entraînement"></video><figcaption><span class="en">The AI during training.</span><span class="fr">L’IA pendant l’entraînement.</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="en">Where it stands</span><span class="fr">Où j’en suis</span></h2>
+      <p class="en">The game itself works. The AI is not developed enough to converge yet, and I plan to resume the project. I chose Python because it was the first language I learned.</p>
+      <p class="fr">Le jeu fonctionne. L’IA n’est pas encore assez développée pour converger, et je compte reprendre le projet. J’ai choisi Python car c’est le premier langage que j’ai appris.</p>
+      <p class="en">In the middle of the project I paused for a month, then restarted almost from scratch: the structure no longer matched what I had learned since.</p>
+      <p class="fr">En cours de route, j’ai fait un mois de pause puis repris presque de zéro : la structure ne correspondait plus à ce que j’avais appris entre-temps.</p>
+    </section>
+
+    <section>
+      <h2><span class="en">Challenges</span><span class="fr">Difficultés</span></h2>
+      <ul class="plain">
+        <li><span class="en">Training was slow, so I sped the game up.</span><span class="fr">L’entraînement était lent, j’ai donc accéléré le jeu.</span></li>
+        <li><span class="en">At higher speed the movements became jerky, so I interpolated them.</span><span class="fr">À vitesse élevée, les mouvements devenaient saccadés, j’ai donc interpolé les déplacements.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="en">What I would do differently</span><span class="fr">Ce que je ferais autrement</span></h2>
+      <ul class="plain">
+        <li><span class="en">Write the neural network with numpy.</span><span class="fr">Écrire le réseau de neurones avec numpy.</span></li>
+        <li><span class="en">Turn off the display during training.</span><span class="fr">Désactiver l’affichage pendant l’entraînement.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="en">Skills used</span><span class="fr">Compétences mobilisées</span></h2>
+      <p>Python, PyGame, <span class="en">vectors, interpolation, machine learning</span><span class="fr">vecteurs, interpolation, machine learning</span>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>Erwan Mercier, EPITA Lyon</span>
+    <a href="mailto:erwan.mercier972@gmail.com">erwan.mercier972@gmail.com</a>
+    <a href="https://github.com/Materwan">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>

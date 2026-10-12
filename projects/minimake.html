@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" data-title-en="Minimake — Erwan Mercier" data-title-fr="Minimake — Erwan Mercier">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minimake — Erwan Mercier</title>
+<meta name="description" content="Minimake: a re-implementation of the make build tool in C.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script>try{if(localStorage.lang==='fr')document.documentElement.lang='fr'}catch{}</script>
+<script src="../main.js" defer></script>
+</head>
+<body>
+<div class="wrap page">
+  <header class="top">
+    <a class="name" href="../index.html">Erwan Mercier</a>
+    <nav aria-label="Main">
+      <a href="../index.html#projects"><span class="en">Projects</span><span class="fr">Projets</span></a>
+      <a href="../index.html#skills"><span class="en">Skills</span><span class="fr">Compétences</span></a>
+      <a href="../index.html#ethics"><span class="en">AI and ethics</span><span class="fr">IA et éthique</span></a>
+      <a href="../index.html#background"><span class="en">Background</span><span class="fr">Parcours</span></a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language / Langue">
+      <button data-l="en" aria-pressed="true" lang="en">EN</button>
+      <button data-l="fr" aria-pressed="false" lang="fr">FR</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <a class="back" href="../index.html#projects"><span class="en">Back to projects</span><span class="fr">Retour aux projets</span></a>
+      <h1>Minimake</h1>
+      <p class="lead en">A re-implementation of the <code>make</code> build tool in C, written alone in two weeks.</p>
+      <p class="lead fr">Une réimplémentation de l’outil de compilation <code>make</code> en C, écrite seul en deux semaines.</p>
+      <dl class="dl facts">
+        <div><dt><span class="en">Context</span><span class="fr">Contexte</span></dt><dd><span class="en">Solo project at EPITA</span><span class="fr">Projet individuel à l’EPITA</span></dd></div>
+        <div><dt><span class="en">Period</span><span class="fr">Période</span></dt><dd><span class="en">April 27 to May 10, 2026</span><span class="fr">27 avril au 10 mai 2026</span></dd></div>
+        <div><dt>Stack</dt><dd>C</dd></div>
+        <div><dt><span class="en">Code</span><span class="fr">Code</span></dt><dd><a href="https://github.com/Materwan/minimake.git">github.com/Materwan/minimake</a></dd></div>
+      </dl>
+    </div>
+
+    <section>
+      <h2><span class="en">What it does</span><span class="fr">Ce qu’il fait</span></h2>
+      <p class="en">Minimake reads a Makefile and runs the right commands. It supports:</p>
+      <p class="fr">Minimake lit un Makefile et exécute les bonnes commandes. Il gère :</p>
+      <ul class="plain" style="margin-top:.9rem">
+        <li><span class="en">parsing of the syntax, including comments</span><span class="fr">l’analyse de la syntaxe, commentaires compris</span></li>
+        <li><span class="en">variables and rules</span><span class="fr">les variables et les règles</span></li>
+        <li><span class="en">execution of the commands</span><span class="fr">l’exécution des commandes</span></li>
+        <li><span class="en">up-to-date checks, so unchanged targets are skipped</span><span class="fr">la vérification des dates, pour ignorer les cibles inchangées</span></li>
+        <li><span class="en">error handling</span><span class="fr">la gestion des erreurs</span></li>
+      </ul>
+      <p class="en" style="margin-top:1.25rem">Not implemented: automatic variables (<code>$@</code>, <code>$&lt;</code>) and <code>.PHONY</code>.</p>
+      <p class="fr">Non implémenté : les variables automatiques (<code>$@</code>, <code>$&lt;</code>) et <code>.PHONY</code>.</p>
+      <figure><img class="shot" src="../assets/minimake/run.png" width="2206" height="1944" loading="lazy" alt="Terminal session: minimake builds a C program, skips an up-to-date target, rebuilds after a file changes, cleans, and reports an unknown target" data-alt-fr="Session de terminal : minimake compile un programme C, ignore une cible à jour, recompile après une modification, nettoie et signale une cible inconnue"><figcaption><span class="en">A session: build, up-to-date check, rebuild after <code>touch</code>, <code>clean</code>, and the error for an unknown target.</span><span class="fr">Une session : compilation, vérification de la date, recompilation après <code>touch</code>, <code>clean</code>, et l’erreur pour une cible inconnue.</span></figcaption></figure>
+    </section>
+
+    <section>
+      <h2><span class="en">Challenges</span><span class="fr">Difficultés</span></h2>
+      <ul class="plain">
+        <li><strong>Parsing.</strong> <span class="en">Reading the Makefile with the string.h functions.</span><span class="fr">Lire le Makefile avec les fonctions de string.h.</span></li>
+        <li><strong><span class="en">Execution.</span><span class="fr">Exécution.</span></strong> <span class="en">Running each command in a subprocess.</span><span class="fr">Lancer chaque commande dans un sous-processus.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="en">What I would do differently</span><span class="fr">Ce que je ferais autrement</span></h2>
+      <ul class="plain">
+        <li><span class="en">Cleaner code and a better structure.</span><span class="fr">Un code plus propre et une meilleure structure.</span></li>
+        <li><span class="en">More tests.</span><span class="fr">Plus de tests.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="en">Skills used</span><span class="fr">Compétences mobilisées</span></h2>
+      <p>C, <span class="en">parsing, processes, working autonomously</span><span class="fr">analyse syntaxique, processus, travail en autonomie</span>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>Erwan Mercier, EPITA Lyon</span>
+    <a href="mailto:erwan.mercier972@gmail.com">erwan.mercier972@gmail.com</a>
+    <a href="https://github.com/Materwan">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>

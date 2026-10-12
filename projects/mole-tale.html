@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" data-title-en="Mole Tale — Erwan Mercier" data-title-fr="Mole Tale — Erwan Mercier">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mole Tale — Erwan Mercier</title>
+<meta name="description" content="Mole Tale: a team video game in Python with A* pathfinding, a network mode, procedural generation and card combat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script>try{if(localStorage.lang==='fr')document.documentElement.lang='fr'}catch{}</script>
+<script src="../main.js" defer></script>
+</head>
+<body>
+<div class="wrap page">
+  <header class="top">
+    <a class="name" href="../index.html">Erwan Mercier</a>
+    <nav aria-label="Main">
+      <a href="../index.html#projects"><span class="en">Projects</span><span class="fr">Projets</span></a>
+      <a href="../index.html#skills"><span class="en">Skills</span><span class="fr">Compétences</span></a>
+      <a href="../index.html#ethics"><span class="en">AI and ethics</span><span class="fr">IA et éthique</span></a>
+      <a href="../index.html#background"><span class="en">Background</span><span class="fr">Parcours</span></a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language / Langue">
+      <button data-l="en" aria-pressed="true" lang="en">EN</button>
+      <button data-l="fr" aria-pressed="false" lang="fr">FR</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <a class="back" href="../index.html#projects"><span class="en">Back to projects</span><span class="fr">Retour aux projets</span></a>
+      <h1>Mole Tale</h1>
+      <p class="lead en">A top-down video game built from scratch in Python by a team of five, with A* pathfinding, a network mode, a procedurally generated map and card combat.</p>
+      <p class="lead fr">Un jeu vidéo en vue de dessus créé de zéro en Python par une équipe de cinq, avec pathfinding A*, mode réseau, carte générée procéduralement et combats aux cartes.</p>
+      <dl class="dl facts">
+        <div><dt><span class="en">Context</span><span class="fr">Contexte</span></dt><dd><span class="en">Team project, first year at EPITA</span><span class="fr">Projet d’équipe, première année à l’EPITA</span></dd></div>
+        <div><dt><span class="en">Period</span><span class="fr">Période</span></dt><dd><span class="en">October 2025 to May 2026 (8 months)</span><span class="fr">Octobre 2025 à mai 2026 (8 mois)</span></dd></div>
+        <div><dt><span class="en">Team</span><span class="fr">Équipe</span></dt><dd><span class="en">5 people</span><span class="fr">5 personnes</span></dd></div>
+        <div><dt><span class="en">My role</span><span class="fr">Mon rôle</span></dt><dd><span class="en">Team lead, AI and procedural generation</span><span class="fr">Chef d’équipe, IA et génération procédurale</span></dd></div>
+        <div><dt><span class="en">Size</span><span class="fr">Taille</span></dt><dd><span class="en">About 13,000 lines of code, about 400 commits</span><span class="fr">Environ 13 000 lignes de code, environ 400 commits</span></dd></div>
+        <div><dt>Stack</dt><dd>Python, PyGame, Perlin Numpy, TCP, Git</dd></div>
+        <div><dt><span class="en">Code</span><span class="fr">Code</span></dt><dd><a href="https://github.com/Materwan/Projet-J3D.git">github.com/Materwan/Projet-J3D</a></dd></div>
+      </dl>
+    </div>
+
+    <section>
+      <figure>
+        <video class="shot" src="../assets/mole-tale/gameplay.mp4" width="1280" height="720" autoplay muted loop playsinline aria-label="Gameplay of Mole Tale: the player on the overworld with enemies nearby" data-alt-fr="Séquence de jeu de Mole Tale : le joueur sur la carte avec des ennemis à proximité"></video>
+        <figcaption><span class="en">Gameplay on the overworld, with enemies nearby.</span><span class="fr">Séquence de jeu sur la carte, avec des ennemis à proximité.</span></figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2><span class="en">What it does</span><span class="fr">Ce que fait le jeu</span></h2>
+      <ul class="plain">
+        <li><span class="en">Enemies find and chase the player with the A* algorithm.</span><span class="fr">Les ennemis trouvent et poursuivent le joueur grâce à l’algorithme A*.</span></li>
+        <li><span class="en">Two players can play together over the network.</span><span class="fr">Deux joueurs peuvent jouer ensemble en réseau.</span></li>
+        <li><span class="en">The map is generated procedurally.</span><span class="fr">La carte est générée procéduralement.</span></li>
+        <li><span class="en">Fights are played with cards, and merchants sell items.</span><span class="fr">Les combats se jouent aux cartes, et des marchands vendent des objets.</span></li>
+      </ul>
+      <div class="gallery two" style="margin-top:1.75rem">
+        <figure><img class="shot" src="../assets/mole-tale/dungeon.png" width="1920" height="1080" loading="lazy" alt="A dungeon with several enemies" data-alt-fr="Un donjon avec plusieurs ennemis"><figcaption><span class="en">A dungeon.</span><span class="fr">Un donjon.</span></figcaption></figure>
+        <figure><img class="shot" src="../assets/mole-tale/shop.png" width="1920" height="1080" loading="lazy" alt="A merchant’s shop where the player buys and sells items" data-alt-fr="La boutique d’une marchande où le joueur achète et vend des objets"><figcaption><span class="en">A merchant’s shop. The game interface is in French.</span><span class="fr">La boutique d’une marchande. L’interface du jeu est en français.</span></figcaption></figure>
+      </div>
+      <figure><img class="shot" src="../assets/mole-tale/card-game.png" width="1920" height="1080" loading="lazy" alt="Card battle against a boss" data-alt-fr="Combat de cartes contre un boss"><figcaption><span class="en">Card battle against a boss.</span><span class="fr">Combat de cartes contre un boss.</span></figcaption></figure>
+    </section>
+
+    <section>
+      <h2><span class="en">My role</span><span class="fr">Mon rôle</span></h2>
+      <p class="en">I led the team: planning, splitting the work and coordinating five people over eight months. On the technical side I wrote the enemy AI and the procedural generation of the map.</p>
+      <p class="fr">J’ai dirigé l’équipe : planning, répartition du travail et coordination de cinq personnes pendant huit mois. Côté technique, j’ai écrit l’IA des ennemis et la génération procédurale de la carte.</p>
+    </section>
+
+    <section>
+      <h2><span class="en">Challenges</span><span class="fr">Difficultés</span></h2>
+      <ul class="plain">
+        <li><strong><span class="en">Procedural generation.</span><span class="fr">Génération procédurale.</span></strong> <span class="en">The terrain is built from Perlin noise, using the Perlin Numpy library.</span><span class="fr">Le terrain est construit à partir de bruit de Perlin, avec la bibliothèque Perlin Numpy.</span></li>
+        <li><strong>Pathfinding.</strong> <span class="en">Enemies use the A* algorithm.</span><span class="fr">Les ennemis utilisent l’algorithme A*.</span></li>
+        <li><strong><span class="en">Network mode.</span><span class="fr">Mode réseau.</span></strong> <span class="en">It relies on the TCP protocol, asynchronous code and threads.</span><span class="fr">Il repose sur le protocole TCP, du code asynchrone et des threads.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="en">What I would do differently</span><span class="fr">Ce que je ferais autrement</span></h2>
+      <ul class="plain">
+        <li><span class="en">Scale back the ambitions. Procedural generation was more than the available time allowed, and I would rather deliver a smaller game that feels finished.</span><span class="fr">Revoir mes ambitions à la baisse. La génération procédurale dépassait le temps disponible, et je préfère livrer un jeu plus petit mais abouti.</span></li>
+        <li><span class="en">Rebuild the card game, which I rushed at the end.</span><span class="fr">Refaire le jeu de cartes, que j’ai fait dans la précipitation à la fin.</span></li>
+        <li><span class="en">Estimate each task better, and how much time students really have for a project.</span><span class="fr">Mieux estimer chaque tâche, ainsi que le temps réel que des étudiants peuvent consacrer à un projet.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="en">Skills used</span><span class="fr">Compétences mobilisées</span></h2>
+      <p>Python, PyGame, Git, <span class="en">team and schedule management</span><span class="fr">gestion d’équipe et de planning</span>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>Erwan Mercier, EPITA Lyon</span>
+    <a href="mailto:erwan.mercier972@gmail.com">erwan.mercier972@gmail.com</a>
+    <a href="https://github.com/Materwan">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" data-title-en="Erwan Mercier — AI Engineer in Training" data-title-fr="Erwan Mercier — Ingénieur IA en formation">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Erwan Mercier — AI Engineer in Training</title>
+<meta name="description" content="Portfolio of Erwan Mercier, second-year computer science engineering student at EPITA Lyon: games, automation and AI agents.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{if(localStorage.lang==='fr')document.documentElement.lang='fr'}catch{}</script>
+<script src="main.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="name" href="index.html">Erwan Mercier</a>
+    <nav aria-label="Main">
+      <a href="#projects"><span class="en">Projects</span><span class="fr">Projets</span></a>
+      <a href="#skills"><span class="en">Skills</span><span class="fr">Compétences</span></a>
+      <a href="#ethics"><span class="en">AI and ethics</span><span class="fr">IA et éthique</span></a>
+      <a href="#background"><span class="en">Background</span><span class="fr">Parcours</span></a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language / Langue">
+      <button data-l="en" aria-pressed="true" lang="en">EN</button>
+      <button data-l="fr" aria-pressed="false" lang="fr">FR</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1 style="--i:0">Erwan Mercier</h1>
+      <p class="role" style="--i:1"><span class="en">AI engineer in training</span><span class="fr">Ingénieur IA en formation</span></p>
+      <p class="lead" style="--i:2">
+        <span class="en">I’m a second-year student at EPITA Lyon. I build games, automation tools and AI agents, and I’m aiming for a PhD in AI.</span>
+        <span class="fr">Je suis étudiant en deuxième année à l’EPITA Lyon. Je construis des jeux, des outils d’automatisation et des agents IA, et je vise un doctorat en IA.</span>
+      </p>
+      <ul class="avail" style="--i:3">
+        <li><span class="en">Looking for a summer 2027 internship in computer science.</span><span class="fr">À la recherche d’un stage en informatique pour l’été 2027.</span></li>
+        <li><span class="en">Open to freelance automation missions, invoiced through a portage salarial company (paperwork in progress).</span><span class="fr">Ouvert aux missions freelance d’automatisation, facturées via une société de portage salarial (dossier en cours).</span></li>
+      </ul>
+      <div class="btns" style="--i:4">
+        <a class="btn primary" href="mailto:erwan.mercier972@gmail.com"><span class="en">Email me</span><span class="fr">M’écrire</span></a>
+        <a class="btn" href="erwan-mercier-cv.pdf"><span class="en">Download my CV</span><span class="fr">Télécharger mon CV</span></a>
+      </div>
+      <div class="now" style="--i:5">
+        <p>
+          <span class="en">Right now I’m building Clara, a personal AI agent that runs on my own server. She reminds me of my tasks on Discord and runs scheduled jobs.</span>
+          <span class="fr">En ce moment je construis Clara, un agent IA personnel hébergé sur mon propre serveur. Elle me rappelle mes tâches sur Discord et exécute des tâches programmées.</span>
+        </p>
+        <a class="more" href="projects/clara.html"><span class="en">Read about Clara</span><span class="fr">Découvrir Clara</span></a>
+      </div>
+    </div>
+
+    <section id="projects">
+      <h2><span class="en">Projects</span><span class="fr">Projets</span></h2>
+
+      <article class="proj feature">
+        <a href="projects/mole-tale.html" tabindex="-1" aria-hidden="true"><img class="shot" src="assets/mole-tale/overworld.png" width="1920" height="1080" alt=""></a>
+        <div>
+          <h3><a href="projects/mole-tale.html">Mole Tale</a></h3>
+          <p class="meta"><span class="en">Team project at EPITA, October 2025 to May 2026</span><span class="fr">Projet d’équipe à l’EPITA, octobre 2025 à mai 2026</span></p>
+          <p class="en">A video game built from scratch in Python by a team of five. Enemies hunt the player with A* pathfinding, two players can play over the network, the map is generated procedurally and fights are played with cards. I led the team and wrote the AI and the map generation. About 13,000 lines and 400 commits.</p>
+          <p class="fr">Un jeu vidéo créé de zéro en Python par une équipe de cinq. Les ennemis traquent le joueur grâce au pathfinding A*, deux joueurs peuvent jouer en réseau, la carte est générée procéduralement et les combats se jouent aux cartes. J’ai dirigé l’équipe et écrit l’IA et la génération de la carte. Environ 13 000 lignes et 400 commits.</p>
+          <ul class="tags"><li>Python</li><li>PyGame</li><li>A*</li><li>TCP</li><li>Git</li></ul>
+          <a class="more" href="projects/mole-tale.html"><span class="en">See the project</span><span class="fr">Voir le projet</span></a>
+        </div>
+      </article>
+
+      <div class="pair">
+        <article class="proj">
+          <a href="projects/asteroid.html" tabindex="-1" aria-hidden="true"><img class="shot" src="assets/asteroid/game.png" width="1841" height="1074" alt="" loading="lazy"></a>
+          <h3 style="margin-top:1rem"><a href="projects/asteroid.html">Asteroid</a></h3>
+          <p class="meta"><span class="en">Personal project, summer 2024</span><span class="fr">Projet personnel, été 2024</span></p>
+          <p class="en">My first coding project: an arcade Asteroids clone, and a neural network written from scratch that should learn to play it. The game works; the AI doesn’t converge yet, and I plan to come back to it.</p>
+          <p class="fr">Mon premier projet de code : un clone du jeu d’arcade Asteroids, et un réseau de neurones écrit de zéro censé apprendre à y jouer. Le jeu fonctionne ; l’IA ne converge pas encore et je compte y revenir.</p>
+          <ul class="tags"><li>Python</li><li>PyGame</li><li>Neural network</li></ul>
+          <a class="more" href="projects/asteroid.html"><span class="en">See the project</span><span class="fr">Voir le projet</span></a>
+        </article>
+        <article class="proj">
+          <a href="projects/minimake.html" tabindex="-1" aria-hidden="true"><img class="shot" src="assets/minimake/run.png" width="2206" height="1944" alt="" loading="lazy" style="aspect-ratio:4/3;object-position:top"></a>
+          <h3 style="margin-top:1rem"><a href="projects/minimake.html">Minimake</a></h3>
+          <p class="meta"><span class="en">EPITA project, solo, two weeks in 2026</span><span class="fr">Projet EPITA, en solo, deux semaines en 2026</span></p>
+          <p class="en">A re-implementation of <code>make</code> in C: it parses a Makefile, handles variables and rules, skips targets that are up to date and reports errors.</p>
+          <p class="fr">Une réimplémentation de <code>make</code> en C : elle lit un Makefile, gère variables et règles, ignore les cibles à jour et signale les erreurs.</p>
+          <ul class="tags"><li>C</li><li>Parsing</li><li>Processes</li></ul>
+          <a class="more" href="projects/minimake.html"><span class="en">See the project</span><span class="fr">Voir le projet</span></a>
+        </article>
+      </div>
+
+      <article class="proj row">
+        <a href="projects/clara.html" tabindex="-1" aria-hidden="true"><img class="shot" src="assets/clara/chat.png" width="2880" height="1440" alt="" loading="lazy" style="aspect-ratio:2/1"></a>
+        <div>
+          <h3><a href="projects/clara.html">Clara</a></h3>
+          <p class="meta"><span class="en">Personal project, running since October 2026</span><span class="fr">Projet personnel, en service depuis octobre 2026</span></p>
+          <p class="en">One AI with a single memory and several ways to reach it: a website, a web app, a custom terminal and a Discord bot, all talking to the same Python server. Still in progress; the code is public.</p>
+          <p class="fr">Une IA avec une seule mémoire et plusieurs moyens de la joindre : un site web, une application web, un terminal sur mesure et un bot Discord, tous reliés au même serveur Python. Encore en cours ; le code est public.</p>
+          <ul class="tags"><li>Python</li><li>AI agents</li><li>SQLite</li><li>Discord</li></ul>
+          <a class="more" href="projects/clara.html"><span class="en">See the project</span><span class="fr">Voir le projet</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2><span class="en">Skills</span><span class="fr">Compétences</span></h2>
+      <p class="muted"><span class="en">Each skill points to the project where I used it.</span><span class="fr">Chaque compétence renvoie au projet où je l’ai utilisée.</span></p>
+      <dl class="dl" style="margin-top:1.5rem">
+        <div><dt>Python <span class="muted small"><span class="en">(advanced)</span><span class="fr">(avancé)</span></span></dt><dd><a href="projects/mole-tale.html">Mole Tale</a>, <a href="projects/asteroid.html">Asteroid</a>, <a href="projects/clara.html">Clara</a></dd></div>
+        <div><dt>C <span class="muted small"><span class="en">(advanced)</span><span class="fr">(avancé)</span></span></dt><dd><a href="projects/minimake.html">Minimake</a></dd></div>
+        <div><dt><span class="en">Git and teamwork</span><span class="fr">Git et travail d’équipe</span> <span class="muted small"><span class="en">(advanced)</span><span class="fr">(avancé)</span></span></dt><dd><a href="projects/mole-tale.html">Mole Tale</a>: <span class="en">team of five, about 400 commits, schedule and coordination</span><span class="fr">équipe de cinq, environ 400 commits, planning et coordination</span></dd></div>
+        <div><dt><span class="en">Pathfinding and procedural generation</span><span class="fr">Pathfinding et génération procédurale</span></dt><dd><a href="projects/mole-tale.html">Mole Tale</a>: <span class="en">A* and Perlin noise</span><span class="fr">A* et bruit de Perlin</span></dd></div>
+        <div><dt><span class="en">Networking</span><span class="fr">Réseau</span></dt><dd><a href="projects/mole-tale.html">Mole Tale</a>: <span class="en">TCP, asynchronous code, threads</span><span class="fr">TCP, code asynchrone, threads</span></dd></div>
+        <div><dt>Machine learning <span class="muted small"><span class="en">(intermediate)</span><span class="fr">(intermédiaire)</span></span></dt><dd><a href="projects/asteroid.html">Asteroid</a>: <span class="en">a neural network written from scratch</span><span class="fr">un réseau de neurones écrit de zéro</span></dd></div>
+        <div><dt><span class="en">AI agents and language models</span><span class="fr">Agents IA et modèles de langage</span></dt><dd><a href="projects/clara.html">Clara</a>: Ollama, Gemini, DeepSeek, Mistral</dd></div>
+        <div><dt><span class="en">Testing</span><span class="fr">Tests</span> <span class="muted small"><span class="en">(intermediate)</span><span class="fr">(intermédiaire)</span></span></dt><dd><a href="projects/clara.html">Clara</a>: <span class="en">pytest, run in CI on Linux and Windows</span><span class="fr">pytest, exécutés en CI sous Linux et Windows</span></dd></div>
+        <div><dt><span class="en">English</span><span class="fr">Anglais</span></dt><dd><span class="en">C1: IELTS 7.0, TOEIC 800</span><span class="fr">C1 : IELTS 7.0, TOEIC 800</span></dd></div>
+      </dl>
+
+      <h3 style="margin:3rem 0 1.25rem"><span class="en">How I work</span><span class="fr">Ma façon de travailler</span></h3>
+      <div class="three">
+        <div><h3><span class="en">Autonomy</span><span class="fr">Autonomie</span></h3>
+          <p class="en">I choose the method and the structure myself and I learn on my own. I built Minimake alone in two weeks.</p>
+          <p class="fr">Je choisis seul la méthode et la structure, et j’apprends par moi-même. J’ai réalisé Minimake seul en deux semaines.</p></div>
+        <div><h3><span class="en">Critical thinking</span><span class="fr">Esprit critique</span></h3>
+          <p class="en">I question my own work, even after dozens of hours. On Asteroid I paused for a month, then restarted almost from scratch.</p>
+          <p class="fr">Je remets en question mon travail, même après des dizaines d’heures. Sur Asteroid, j’ai fait un mois de pause puis repris presque de zéro.</p></div>
+        <div><h3><span class="en">Decision-making</span><span class="fr">Prise de décision</span></h3>
+          <p class="en">I weigh the options, pick one and apply it. At Qualicoupe I worked with a lot of autonomy and made decisions on my own.</p>
+          <p class="fr">Je compare les options, j’en choisis une et je l’applique. Chez Qualicoupe, j’ai travaillé avec beaucoup d’autonomie et pris des décisions seul.</p></div>
+      </div>
+    </section>
+
+    <section id="ethics" class="ethics">
+      <h2><span class="en">AI and ethics</span><span class="fr">IA et éthique</span></h2>
+      <p class="en">AI is a tool by definition. What frightens me is that it may be the last tool humans will ever have to invent, and one of the very few that can oppose its creator.</p>
+      <p class="fr">L’IA est par définition un outil. Ce qui m’inquiète, c’est qu’elle est peut-être le dernier outil que l’humain aura à inventer, et l’un des seuls capables de s’opposer à son créateur.</p>
+      <p class="en">Meanwhile, the system we live in prefers to go faster at the expense of safety.</p>
+      <p class="fr">Pendant ce temps, le système dans lequel nous vivons préfère aller toujours plus vite, au détriment de la sécurité.</p>
+      <p class="en">I want to help protect people from these risks, starting by questioning how today’s AIs are built and aligned, which we still don’t understand. I also want to protect artistic professions: a work whose message comes from a person can’t be replaced by a machine without losing that message.</p>
+      <p class="fr">Je veux contribuer à protéger les gens de ces risques, en commençant par questionner la structure des IA actuelles et leur alignement, que nous ne comprenons pas encore. Je veux aussi protéger les métiers artistiques : une œuvre dont le message vient d’une personne ne peut pas être remplacée par une machine sans perdre ce message.</p>
+    </section>
+
+    <section id="background">
+      <h2><span class="en">Background</span><span class="fr">Parcours</span></h2>
+      <dl class="dl">
+        <div><dt><span class="en">June 1 to July 31, 2026</span><span class="fr">1er juin au 31 juillet 2026</span></dt>
+          <dd><strong style="color:var(--fg)"><span class="en">Fruit and vegetable cutting operator, Qualicoupe</span><span class="fr">Ouvrier de découpe de fruits et légumes, Qualicoupe</span></strong><br>
+          <span class="en">Two-month fixed-term contract. I learned how a team works and how to listen, and I worked with a lot of autonomy.</span><span class="fr">CDD de deux mois. J’y ai appris le fonctionnement d’une équipe et l’écoute, et j’ai travaillé avec beaucoup d’autonomie.</span></dd></div>
+        <div><dt><span class="en">September 2025 to now</span><span class="fr">Septembre 2025 à aujourd’hui</span></dt>
+          <dd><strong style="color:var(--fg)"><span class="en">EPITA Lyon, engineering preparatory cycle in computer science (2nd year)</span><span class="fr">EPITA Lyon, cycle préparatoire ingénieur en informatique (2e année)</span></strong><br>
+          <span class="en">Algorithms, programming in Python, C and OCaml, mathematics, project management.</span><span class="fr">Algorithmique, programmation en Python, C et OCaml, mathématiques, gestion de projet.</span></dd></div>
+        <div><dt>2025</dt>
+          <dd><strong style="color:var(--fg)"><span class="en">Baccalauréat, La Xavière, Lyon</span><span class="fr">Baccalauréat, La Xavière, Lyon</span></strong><br>
+          <span class="en">Mathematics and computer science (NSI) specialties, European option.</span><span class="fr">Spécialités mathématiques et NSI, option européenne.</span></dd></div>
+      </dl>
+
+      <h3 style="margin:3rem 0 1.25rem"><span class="en">Beyond code</span><span class="fr">En dehors du code</span></h3>
+      <dl class="dl">
+        <div><dt>Piano</dt><dd><span class="en">More than eleven years of playing, with eleven years of lessons. Mostly classical music; Chopin is my favourite.</span><span class="fr">Plus de onze ans de pratique, avec onze ans de cours. Surtout du classique ; Chopin est mon préféré.</span></dd></div>
+        <div><dt><span class="en">Climbing</span><span class="fr">Escalade</span></dt><dd><span class="en">Bouldering every week for a year, at an intermediate level.</span><span class="fr">De l’escalade de bloc chaque semaine depuis un an, niveau intermédiaire.</span></dd></div>
+        <div><dt>Badminton</dt><dd><span class="en">In a club, free play. I took lessons from 2021 to 2024.</span><span class="fr">En club, en jeu libre. J’ai pris des cours de 2021 à 2024.</span></dd></div>
+      </dl>
+
+      <h3 style="margin:3rem 0 .75rem"><span class="en">What’s next</span><span class="fr">La suite</span></h3>
+      <p class="en">I’m working on advanced Git (branches, rebase, merge), machine learning, AI agents and my spoken English. I follow the field through social media and friends who work in it. After an AI specialisation at engineering school, I want to do a PhD in AI, with a focus on the safety of AI systems. Before that: a first internship in a general computer science company, then one specialised in AI.</p>
+      <p class="fr">Je travaille Git avancé (branches, rebase, merge), le machine learning, les agents IA et mon anglais oral. Je me tiens informé via les réseaux sociaux et des amis qui travaillent dans le domaine. Après une majeure IA en école d’ingénieurs, je veux faire un doctorat en IA, avec un intérêt pour la sécurité des systèmes d’IA. D’ici là : un premier stage dans une entreprise d’informatique généraliste, puis dans une entreprise spécialisée en IA.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="en">Write to me about internships or freelance automation work.</p>
+      <p class="fr">Écrivez-moi pour un stage ou une mission d’automatisation en freelance.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:erwan.mercier972@gmail.com">erwan.mercier972@gmail.com</a>
+        <a class="btn" href="erwan-mercier-cv.pdf"><span class="en">Download my CV</span><span class="fr">Télécharger mon CV</span></a>
+        <a class="btn" href="https://github.com/Materwan">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Erwan Mercier, EPITA Lyon</span>
+    <a href="https://github.com/Materwan">github.com/Materwan</a>
+  </footer>
+</div>
+</body>
+</html>

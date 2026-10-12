@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" data-title-en="Clara — Erwan Mercier" data-title-fr="Clara — Erwan Mercier">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clara — Erwan Mercier</title>
+<meta name="description" content="Clara: a personal AI agent with one memory, reachable from a website, a terminal and Discord, running on my own server.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script>try{if(localStorage.lang==='fr')document.documentElement.lang='fr'}catch{}</script>
+<script src="../main.js" defer></script>
+</head>
+<body>
+<div class="wrap page">
+  <header class="top">
+    <a class="name" href="../index.html">Erwan Mercier</a>
+    <nav aria-label="Main">
+      <a href="../index.html#projects"><span class="en">Projects</span><span class="fr">Projets</span></a>
+      <a href="../index.html#skills"><span class="en">Skills</span><span class="fr">Compétences</span></a>
+      <a href="../index.html#ethics"><span class="en">AI and ethics</span><span class="fr">IA et éthique</span></a>
+      <a href="../index.html#background"><span class="en">Background</span><span class="fr">Parcours</span></a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language / Langue">
+      <button data-l="en" aria-pressed="true" lang="en">EN</button>
+      <button data-l="fr" aria-pressed="false" lang="fr">FR</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <a class="back" href="../index.html#projects"><span class="en">Back to projects</span><span class="fr">Retour aux projets</span></a>
+      <h1>Clara</h1>
+      <p class="lead en">A personal AI agent with one memory. A single Python server holds the AI and its memory; a website, a terminal and a Discord bot are thin clients that talk to it.</p>
+      <p class="lead fr">Un agent IA personnel avec une seule mémoire. Un unique serveur Python contient l’IA et sa mémoire ; un site web, un terminal et un bot Discord sont de simples clients qui lui parlent.</p>
+      <dl class="dl facts">
+        <div><dt><span class="en">Context</span><span class="fr">Contexte</span></dt><dd><span class="en">Personal project, outside my coursework</span><span class="fr">Projet personnel, hors cursus</span></dd></div>
+        <div><dt><span class="en">Status</span><span class="fr">État</span></dt><dd><span class="en">In progress. Running since October 4, 2026 on a PC with Ubuntu Server.</span><span class="fr">En cours. En service depuis le 4 octobre 2026 sur un PC sous Ubuntu Server.</span></dd></div>
+        <div><dt>Stack</dt><dd>Python, SQLite, HTTP API, Discord</dd></div>
+        <div><dt><span class="en">Models</span><span class="fr">Modèles</span></dt><dd>Ollama (<span class="en">local or cloud</span><span class="fr">local ou cloud</span>), Gemini, DeepSeek, Mistral</dd></div>
+        <div><dt><span class="en">Code</span><span class="fr">Code</span></dt><dd><a href="https://github.com/Materwan/clara-server">github.com/Materwan/clara-server</a></dd></div>
+      </dl>
+    </div>
+
+    <section>
+      <div class="gallery two">
+        <figure><img class="shot" src="../assets/clara/sign-in.png" width="1865" height="943" alt="Clara’s web site sign-in page" data-alt-fr="Page de connexion du site web de Clara"><figcaption><span class="en">The web site’s sign-in page.</span><span class="fr">La page de connexion du site web.</span></figcaption></figure>
+        <figure><img class="shot" src="../assets/clara/chat.png" width="2880" height="1440" loading="lazy" alt="A conversation on Clara’s web site: she answers a question about what she can do and how she remembers, with projects, tasks, schedule and files in the sidebar" data-alt-fr="Une conversation sur le site de Clara : elle répond à une question sur ce qu’elle sait faire et sur sa mémoire, avec projets, tâches, planning et fichiers dans le menu"><figcaption><span class="en">A conversation, with projects, tasks, schedule and files in the sidebar.</span><span class="fr">Une conversation, avec projets, tâches, planning et fichiers dans le menu.</span></figcaption></figure>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="en">What she does for me</span><span class="fr">Ce qu’elle fait pour moi</span></h2>
+      <ul class="plain">
+        <li><span class="en">Helps me as a conversational AI.</span><span class="fr">M’aide comme IA conversationnelle.</span></li>
+        <li><span class="en">Reminds me of my tasks on Discord.</span><span class="fr">Me rappelle mes tâches sur Discord.</span></li>
+        <li><span class="en">Runs scheduled tasks.</span><span class="fr">Exécute des tâches programmées.</span></li>
+        <li><span class="en">Fixes some of my code from the terminal.</span><span class="fr">Corrige une partie de mon code depuis le terminal.</span></li>
+      </ul>
+      <p class="en" style="margin-top:1.25rem">She can be reached from a website, a web app, a custom terminal and a Discord bot, and she remembers the same things on all of them.</p>
+      <p class="fr" style="margin-top:1.25rem">On peut lui parler depuis un site web, une application web, un terminal sur mesure et un bot Discord, et elle se souvient des mêmes choses sur chacun.</p>
+    </section>
+
+    <section>
+      <h2><span class="en">How it is built</span><span class="fr">Comment c’est construit</span></h2>
+      <p class="en">The server is the only process that touches the memory. Every client sends a message and shows the answer. The model behind her can be switched without a restart.</p>
+      <p class="fr">Le serveur est le seul processus qui touche à la mémoire. Chaque client envoie un message et affiche la réponse. Le modèle qui la fait fonctionner peut être changé sans redémarrage.</p>
+      <svg class="diagram" viewBox="0 0 640 250" role="img" aria-label="Clients (web, terminal, Discord) talk to the Clara server, which holds a SQLite memory and calls model providers: Ollama, Gemini, DeepSeek, Mistral.">
+        <rect x="10" y="20" width="150" height="50" rx="6"/><text x="85" y="50" text-anchor="middle">Web</text>
+        <rect x="10" y="100" width="150" height="50" rx="6"/><text x="85" y="130" text-anchor="middle">Terminal</text>
+        <rect x="10" y="180" width="150" height="50" rx="6"/><text x="85" y="210" text-anchor="middle">Discord</text>
+        <rect class="core" x="240" y="50" width="170" height="150" rx="6"/>
+        <text x="325" y="98" text-anchor="middle">Clara server</text>
+        <text class="sub" x="325" y="118" text-anchor="middle">Python, HTTP API</text>
+        <text class="sub en" x="325" y="160" text-anchor="middle">Memory (SQLite)</text>
+        <text class="sub fr" x="325" y="160" text-anchor="middle">Mémoire (SQLite)</text>
+        <rect x="500" y="10" width="130" height="40" rx="6"/><text x="565" y="35" text-anchor="middle">Ollama</text>
+        <rect x="500" y="70" width="130" height="40" rx="6"/><text x="565" y="95" text-anchor="middle">Gemini</text>
+        <rect x="500" y="130" width="130" height="40" rx="6"/><text x="565" y="155" text-anchor="middle">DeepSeek</text>
+        <rect x="500" y="190" width="130" height="40" rx="6"/><text x="565" y="215" text-anchor="middle">Mistral</text>
+        <path d="M160 45 H200 V110 H240 M160 125 H240 M160 205 H200 V140 H240"/>
+        <path d="M410 100 H455 V30 H500 M410 115 H500 M410 135 H455 V150 H500 M410 150 H455 V210 H500" />
+      </svg>
+    </section>
+
+    <section>
+      <h2><span class="en">Design choices</span><span class="fr">Choix de conception</span></h2>
+      <ul class="plain">
+        <li><strong><span class="en">One memory.</span><span class="fr">Une seule mémoire.</span></strong> <span class="en">What she learns about a person follows them across every client, while conversations stay per client.</span><span class="fr">Ce qu’elle apprend sur une personne la suit sur tous les clients, tandis que les conversations restent propres à chacun.</span></li>
+        <li><strong><span class="en">Approval before risky actions.</span><span class="fr">Validation avant les actions risquées.</span></strong> <span class="en">When she works on connected files or repositories, anything that replaces or deletes asks me first without blocking her. She has no tool to approve her own requests.</span><span class="fr">Quand elle travaille sur des fichiers ou dépôts connectés, tout ce qui remplace ou supprime me demande d’abord mon accord, sans la bloquer. Elle n’a aucun outil pour valider ses propres demandes.</span></li>
+        <li><strong><span class="en">Secrets stay on the server.</span><span class="fr">Les secrets restent sur le serveur.</span></strong> <span class="en">API keys live only in the environment: they are never saved, printed or reachable through the API.</span><span class="fr">Les clés d’API n’existent que dans l’environnement : elles ne sont ni enregistrées, ni affichées, ni accessibles par l’API.</span></li>
+        <li><strong><span class="en">Tested.</span><span class="fr">Testé.</span></strong> <span class="en">Tests and lint run in CI on Linux and Windows.</span><span class="fr">Les tests et le lint s’exécutent en CI sous Linux et Windows.</span></li>
+      </ul>
+      <p class="en" style="margin-top:1.25rem">The second point matters to me: it is where my interest in AI safety becomes a design rule. See <a href="../index.html#ethics">AI and ethics</a>.</p>
+      <p class="fr" style="margin-top:1.25rem">Le deuxième point compte pour moi : c’est là que mon intérêt pour la sécurité de l’IA devient une règle de conception. Voir <a href="../index.html#ethics">IA et éthique</a>.</p>
+    </section>
+
+    <section>
+      <h2><span class="en">Skills used</span><span class="fr">Compétences mobilisées</span></h2>
+      <p>Python, <span class="en">AI agents, language models, API design, automation, testing</span><span class="fr">agents IA, modèles de langage, conception d’API, automatisation, tests</span>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>Erwan Mercier, EPITA Lyon</span>
+    <a href="mailto:erwan.mercier972@gmail.com">erwan.mercier972@gmail.com</a>
+    <a href="https://github.com/Materwan">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>
